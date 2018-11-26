@@ -44,49 +44,20 @@ document.write('<p>Right now it is ' + rightNow + '<p>');
 
 <script type="text/javascript">
 
-document.write('<br><p>Is a number even or odd, is it divisible by 3?')
-
-// Basic functions
-
-function divis(num,d){
-    var evenOdd = 'odd';
-    if (num%2 == 0) {evenOdd = 'even';};
-
-    var ddiv = false;
-    if (num%d == 0) {ddiv = true;};
-
-    var dtext; 
-    if (ddiv==true){dtext = 'is '} else (dtext = 'is not ');
-
-    var str;
-    str = num + ' is ' + evenOdd +' and ' + dtext + 'divisible by ' + d;
-    
-    return(str);
-};
-
-function calc(){
-    var t = document.getElementById("target");
-    t.innerHTML = divis(document.getElementById('num').value, 3);
-}
+document.write('<br><p>Reverse the word')
 
 function rev_word(){
     //var w = document.getElementById("target");
     //w.innerHTML = v.reverse(document.getElementById('wo').value);
     var word_input;
-    word_input = document.getElementById('num').value + ' is reversed to ' + v.reverse(document.getElementById('wo').value);
+    word_input = v.reverse(document.getElementById('wo').value);
     return(word_input);
 }
 </script>
-<p>
-<form>
-    <input id="num" type="number" size="4">
-    <input type="button" value="check" onClick="calc();">
-</form>
-</p>
 
 <p>
 <form>
-    <input id="wo" type="word" size="4">
+    <input id="wo" type="text" size="4">
     <input type="button" value="reverse" onClick="rev_word();">
 </form>
 </p>
