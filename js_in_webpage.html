@@ -37,7 +37,7 @@ document.write('<p>An example of a random number would be ' + Math.random() + '<
 
 var rightNow = new Date();
 
-document.write('<p>Right now it is ' + rightNow + '<p>');
+document.write('<p>Right now it is ' + rightNow + '</p>');
 
 </script>
 
@@ -49,18 +49,18 @@ document.write('<br><p>Reverse the word')
 function rev_word(){
     //var w = document.getElementById("target");
     //w.innerHTML = v.reverse(document.getElementById('wo').value);
-    var word_input;
-    word_input = v.reverse(document.getElementById('wo').value);
-    return(word_input);
+    //var word_input;
+    //word_input = v.reverse(document.getElementById('wo').value);
+    //return(word_input);
+    document.write('<br><p>Reverse the word' + document.getElementById('wo').value + document.getElementById('wo') + wo + </p>)
 }
 
-document.write('<p>Input is ' + v.reverse(document.getElementById('wo').value) + '</p>');
 </script>
 
 <p>
 <form>
     <input id="wo" type="text" size="4">
-    <input type="button" value="reverse" onClick="v.reverse(document.getElementById('wo').value);">
+    <input type="button" value="reverse" onClick="rev_word();">
 </form>
 </p>
 
